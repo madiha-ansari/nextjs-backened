@@ -5,13 +5,13 @@ const getAllProducts = async () => {
   if (!response.ok)
     throw new Error("API NOT FOUND ")
   const result = await response.json()
-  return result
+  return await result
 }
 
-const page = () => {
-  const product = getAllProducts()
+// const page  = () => {
+  export default async function Home(){
+  const product = await getAllProducts()
   console.log(product);
-
   return (
     <div>
       NEXTJS API ROUTES
@@ -19,4 +19,3 @@ const page = () => {
   )
 }
 
-export default page
