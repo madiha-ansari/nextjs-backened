@@ -8,5 +8,5 @@ export const GET = async () => {
 
 
 export const POST = async () => {
-    return NextResponse.json({ data: productLists }, { status: 201 })
+    return NextResponse.json({ data: productLists }, { status: 200 })
 }
