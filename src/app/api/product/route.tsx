@@ -4,6 +4,6 @@ import React from 'react'
 
 export const GET = async () => {
    
-    return NextResponse.json({ data: productLists }, { status: 200 })
+    return NextResponse.json({ data: productLists }, { status: 201 })
 
 }
