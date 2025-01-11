@@ -6,6 +6,6 @@ export const GET = async () => {
     return NextResponse.json({ data: productLists }, { status: 201 })
 }
 
-export const POST = async () => {
+export const POST = async (request:Request) => {
     return NextResponse.json({ data: productLists }, { status: 200 })
 }
